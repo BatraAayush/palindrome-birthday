@@ -227,7 +227,8 @@ function isOrNearestPalindrome(){
             year: Number(arraydate[0])
         }
         if(palindromeForAllFormats(dateObj)) {
-            output.innerHTML = "Yayyy! Your Birthday is a Palindrome.";
+            output.innerHTML = "Yayyy! Your Birthday is a Palindrome &#128518;";
+            output.style.color = "#e2fefe";
         } else {
             const[palenDate, count] = nearestPalendrome(dateObj);
             palenDateStr = palenDate.day + "-" + palenDate.month + "-" +  palenDate.year;
@@ -237,10 +238,13 @@ function isOrNearestPalindrome(){
             } else {
                 day = "days"
             }
-            output.innerHTML = "Opps! You missed Palendrome date ie " + palenDateStr + " by " + count + " " + day;
+            output.innerHTML = "Opps! You missed Palendrome date i.e. " + palenDateStr + " by " + count + " " + day + "&#128533;";
+            output.style.color = "#e2fefe";
+
         }
     } else {
-        output.innerHTML = "Insert Date!"
+        output.innerHTML = "Insert Date!";
+        output.style.color = "red";
     }
 };
 
