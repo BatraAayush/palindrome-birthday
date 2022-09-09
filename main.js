@@ -187,16 +187,11 @@ function previousPalindrome(date) {
 //nearest palendrome 
 function nearestPalendrome(date){
     let [nextPalindromeDate, nextCounter] = nextPalindrome(date);
-    console.log(nextPalindromeDate,nextCounter);
     let [previousPalindromeDate, previousCounter] = previousPalindrome(date);
-    console.log(previousPalindromeDate,previousCounter);
-    console.log("COMPARE");
 
     if(nextCounter < previousCounter) {
-        console.log(nextPalindromeDate,nextCounter);
         return [nextPalindromeDate,nextCounter];
     } else {
-        console.log(previousPalindromeDate,previousCounter);
         return [previousPalindromeDate,previousCounter];
     }
 
