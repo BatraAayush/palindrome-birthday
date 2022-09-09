@@ -233,7 +233,7 @@ function isOrNearestPalindrome(){
             } else {
                 day = "days"
             }
-            output.innerHTML = "Opps! You missed Palendrome date i.e. " + palenDateStr + " by " + count + " " + day + "&#128533;";
+            output.innerHTML = "Opps! You missed Palindrome date i.e. " + palenDateStr + " by " + count + " " + day + "&#128533;";
             output.style.color = "#e2fefe";
 
         }
